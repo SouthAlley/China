@@ -3,8 +3,6 @@ name: Update IP List
 on: 
   push:
   workflow_dispatch:
-  schedule:
-    - cron: "15 20 * * *"
 
 jobs:
   build: 
