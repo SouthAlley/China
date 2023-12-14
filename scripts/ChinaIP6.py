@@ -2,8 +2,8 @@
 import requests
 
 # 获取IPv6地址列表
-v6China = "https://raw.githubusercontent.com/SouthAlley/z/main/Surge/cn6Rule/cn6Rule.list"
-r = requests.get(v6China)
+v4China = "https://raw.githubusercontent.com/SouthAlley/z/main/Surge/cn6Rule/cn6Rule.list"
+r = requests.get(v4China)
 
 # 读取原始IPv4地址文件并转换成单独行的IP-CIDR形式
 original_content = r.text.split('\n')
