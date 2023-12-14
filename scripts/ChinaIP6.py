@@ -2,7 +2,7 @@
 import requests
 
 # 获取IPv6地址列表
-v6China = "https://raw.githubusercontent.com/SouthAlley/z/main/Surge/cnRule/cnRulev6.list"
+v6China = "https://raw.githubusercontent.com/SouthAlley/z/main/Surge/cn6Rule/cn6Rule.list"
 r = requests.get(v6China)
 
 # 读取原始IPv6地址文件并转换成单独行的IP-CIDR形式
@@ -15,6 +15,6 @@ for ip in original_content:
         ip_cidr_content.append(ip_cidr)
 
 # 写入单独行的"IP-CIDR6,IP"形式的内容到新文件
-with open("IPv6.China.list", "w") as cidr_file:
+with open("china6.list", "w") as cidr_file:
     for line in ip_cidr_content:
         cidr_file.write(line + '\n')
