@@ -2,7 +2,7 @@
 import requests
 
 # 获取IPv6地址列表
-v6China = "https://ispip.clang.cn/all_cn_ipv6.txt"
+v6China = "https://raw.githubusercontent.com/SouthAlley/z/main/Surge/ProxyRule/ProxyRule.list"
 r = requests.get(v6China)
 
 # 读取原始IPv6地址文件并转换成单独行的IP-CIDR形式
