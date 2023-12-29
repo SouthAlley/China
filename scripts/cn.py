@@ -17,6 +17,6 @@ for ip in original_content:
         ip_cidr_content.append(ip_cidr_v6)
 
 # 写入单独行的"IP-CIDR,IP"形式的内容到新文件
-with open("IP.China.list", "w") as cidr_file:
+with open("IP.list", "w") as cidr_file:
     for line in ip_cidr_content:
         cidr_file.write(line + '\n')
